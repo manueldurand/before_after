@@ -1,0 +1,17 @@
+/* 
+code n°1 pour ajouter les # après les titres 
+h1:after {
+    content: "#";
+} */
+h1::before {
+    content: "";
+    display: inline-block;
+    width: 65px;
+    height: 20px;
+    background: url(arrow.gif) repeat-x;
+    background-size: contain;
+}
+
+h1:after {
+    content: "";
+}
